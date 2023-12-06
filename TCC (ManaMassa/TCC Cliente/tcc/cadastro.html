@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=    <div class="container_form">
+        <link rel="stylesheet" href="styleC.css">
+        
+    <title>Seja uma Mana</title>
+</head>
+<body>
+    <h1>Cadastro de Cliente</h1>
+        <form id="form">
+            
+                <div class="form_grupo">
+                    <label for="nome" class="form_label">Nome</label>
+                    <input type="text" name="nome" class="form_input" id="nome" placeholder="Ex: Jóse da Silva" >
+                </div>
+                
+                <div class="form_grupo">
+                    <label for="email" class="form_label">Email</label>
+                    <input type="email" name="email" class="form_input" id="email" placeholder="Ex:seuemail@email.com" >
+                </div>
+                <div class="form_grupo">
+                    <label for="cep" class="form_label">Cep:</label>
+                    <input type="text" name="Cep" class="form_input" id="cep" placeholder="Ex:12345-678" >
+                </div>
+                <div class="form_grupo">
+                    <label for="estado" class="form_label">Estado</label>
+                    <input type="text" name="estado" class="form_input" id="estado" placeholder="Ex:PE" >
+                </div>
+                <div class="form_grupo">
+                    <label for="cidade" class="form_label">Cidade:</label>
+                    <input type="text" name="cidade" class="form_input" id="cidade" placeholder="Ex:Recife" >
+                </div>
+                <div class="form_grupo">
+                    <label for="rua" class="form_label">Rua/Avenida</label>
+                    <input type="text" name="rua" class="form_input" id="rua" placeholder="Ex:Rua das Das Rosas" >
+                </div>
+                <div class="form_grupo">
+                    <label for="numero" class="form_label">Número da casa/ Apt e Bloco</label>
+                    <input type="text" name="numero" class="form_input" id="numero" placeholder="Ex:Apt 505 bloco 3" >
+                </div>
+           
+          
+            <div class="form_grupo">
+                <span class="legenda">Qual Serviço voce deseja presta ?</span>
+                <div class="check-btn">
+                    <input type="checkbox" class="form_new_input" id="Encanadora" name="serviço" value="Encanadora">
+                    <label for="Encanadora" class="form_label check_label"> <span class="check_new_btn"></span> Encanadora</label>
+                </div>
+                <div class="check-btn">
+                    <input type="checkbox" class="form_new_input" id="Eletricista" name="serviço" value="Eletricista">
+                    <label for="Eletricista" class="form_label check_label"><span class="check_new_btn"></span> Eletricista</label>
+                </div>
+                <div class="check-btn">
+                    <input type="checkbox" class="form_new_input" id="Diarista" name="serviço" value="Diarista">
+                    <label for="Diarista" class="form_label check_label"><span class="check_new_btn"></span> Diarista</label>
+                </div>
+                <div class="check-btn">
+                    <input type="checkbox" class="form_new_input" id="Pintora" name="serviço" value="Pintora">
+                    <label for="Pintora" class="form_label check_label"><span class="check_new_btn"></span> Pintora</label>
+                </div>
+                <div class="check-btn">
+                    <input type="checkbox" class="form_new_input" id="Manutenção" name="serviço" value="Manutenção">
+                    <label for="Manutenção" class="form_label check_label"><span class="check_new_btn"></span>Manutenção</label>
+                </div>
+              
+                <label class="Pagamento" for="pagamento">Pagamento:</label>
+                    <select name="text" id="Pagamento">
+                        <option value="Dinhero">Dinhero</option>
+                        <option value="Pix">Pix</option>
+                        <option value="CartaodeCredito">Cartão de Crédito ou Débito</option>
+                 
+                </div>
+                <div class="submit">
+                  <input type="hidden" name="acao" value="enviar">
+                  <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
+                
+                </div>
+        </form>
+
+
+        <script src="index.js"></script>
+</body>
+</html>

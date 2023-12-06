@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="imagens/Logo ManaMassa.png" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="index.html" target="-blank">Voltar</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome completo</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">CPF</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu cpf" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Cep:</label>
+                        <input id="cep" type="text" name="number" placeholder="Digite seu cep" required
+                             maxlength="9"
+                             onblur="pesquisaCEP(this.value);">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Estado</label>
+                        <input id="uf" type="text" name="uf" placeholder="Digite seu estado" required>
+                        
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="number">Cidade</label>
+                        <input id="cidade" type="text" name="cidade" placeholder="Digite sua cidade" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Bairro</label>
+                        <input id="bairro" type="text" name="bairro" placeholder="Digite seu bairro" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">confirme sua senha</label>
+                        <input id="continue-button" type="password" name="password" placeholder="confirme sua senha" required>
+                    </div>
+
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Pagamento</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="cartao" type="radio" name="cartao">
+                            <label for="cartao">Cartão</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="dinheiro" type="radio" name="gender">
+                            <label for="dinheiro">Dinheiro</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="pix" type="radio" name="gender">
+                            <label for="pix">Pix</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="alerte.html">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script src="forms.js"></script>
+</body>
+
+</html>
